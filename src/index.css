@@ -2,14 +2,14 @@
 
 :root {
   /* Brand Colors */
-  --color-primary: #00e0ff; /* Tech Blue */
-  --color-primary-dark: #00b3cc;
-  --color-secondary: #ff3b3b; /* Accent Red (Caution/Mechanic touch) */
+  --color-primary: #00a650; /* Green Carioca */
+  --color-primary-dark: #00823d;
+  --color-secondary: #e60000; /* Red Carioca */
   
-  /* Neutral/Dark Mode Scale */
-  --color-bg: #0a0a0c; /* Deep Black */
+  /* Neutral/Dark Scale */
+  --color-bg: #0a0a0c; /* Black */
   --color-bg-alt: #121215;
-  --color-surface: #1e1e24; /* Metallic Gray */
+  --color-surface: #1e1e24;
   --color-surface-hover: #2a2a32;
   --color-border: #33333d;
   
@@ -66,7 +66,7 @@ ul {
   background: rgba(30, 30, 36, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 166, 80, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 

@@ -36,12 +36,12 @@
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-bg);
-  box-shadow: 0 4px 15px rgba(0, 224, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 166, 80, 0.3);
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
-  box-shadow: 0 6px 20px rgba(0, 224, 255, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 166, 80, 0.5);
   transform: translateY(-2px);
 }
 
@@ -63,7 +63,7 @@
 }
 
 .btn-danger:hover {
-  background-color: #e63535;
-  box-shadow: 0 6px 20px rgba(255, 59, 59, 0.4);
+  background-color: #cc0000;
+  box-shadow: 0 6px 20px rgba(230, 0, 0, 0.4);
   transform: translateY(-2px);
 }
