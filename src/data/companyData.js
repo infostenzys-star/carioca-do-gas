@@ -5,10 +5,12 @@ export const companyData = {
   whatsapp: "5592999999999",
   email: "contato@cariocadogas.com.br",
   address: "Av. Principal, 1000 - Manaus, AM",
+  mapUrl: "https://maps.google.com/?q=Manaus,AM",
+  embedMapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.42261546738!2d-60.10309995576214!3d-3.113063599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9fab7e05!2sManaus%2C%20AM!5e0!3m2!1spt-BR!2sbr!4v1713028212177!5m2!1spt-BR!2sbr",
   workingHours: "Seg - Sáb: 08:00 às 18:00",
   social: {
-    instagram: "https://instagram.com/cariocadogas",
-    facebook: "https://facebook.com/cariocadogas"
+    instagram: "https://www.instagram.com/carioca_do_gas?igsh=MTl2a3l4OXp3aXVseQ==",
+    facebook: "https://www.facebook.com/share/1BAETCRAgQ/"
   },
   services: [
     {

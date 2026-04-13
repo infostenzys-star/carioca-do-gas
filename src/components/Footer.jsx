@@ -47,9 +47,14 @@ const Footer = () => {
               <Mail size={18} className="contact-icon" />
               <span>{companyData.email}</span>
             </li>
-            <li className="address-item">
-              <MapPin size={18} className="contact-icon" />
-              <span>{companyData.address}</span>
+            <li className="address-item" style={{ alignItems: 'flex-start' }}>
+              <MapPin size={18} className="contact-icon" style={{ marginTop: '4px' }} />
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <span>{companyData.address}</span>
+                <a href={companyData.mapUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85rem', color: 'var(--color-primary)', fontWeight: '600' }}>
+                  📍 Ver no Mapa
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -57,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} {companyData.name}. Todos os direitos reservados.</p>
-        <p className="footer-madeby">Desenvolvido com tecnologia de ponta 🚀</p>
+        <p className="footer-madeby">Desenvolvido com tecnologia de ponta da InfoStenzys 🚀</p>
       </div>
     </footer>
   );

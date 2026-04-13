@@ -66,6 +66,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Location Section */}
+      <section className="section-padding location-section" style={{ borderTop: '1px solid var(--color-border)' }}>
+        <div className="container">
+          <div className="section-header" style={{ marginBottom: '2rem' }}>
+            <h2 className="section-title">Onde nos <span className="text-gradient">Encontrar</span></h2>
+            <p className="section-desc">Venha nos visitar em nossa oficina equipada em Manaus.</p>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center' }}>
+            <div style={{ width: '100%', height: '350px', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
+              <iframe 
+                src={companyData.embedMapUrl} 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Carioca do Gás"
+              ></iframe>
+            </div>
+            <a href={companyData.mapUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-md" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              📍 Abrir no GPS (Traçar Rota)
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container cta-container surface-glass">

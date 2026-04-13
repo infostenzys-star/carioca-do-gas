@@ -40,7 +40,10 @@ const Contact = () => {
                   <MapPin color="var(--color-primary)" />
                   <div>
                     <strong style={{ display: 'block', marginBottom: '0.2rem' }}>Endereço</strong>
-                    <span style={{ color: 'var(--color-text-muted)' }}>{companyData.address}</span>
+                    <span style={{ color: 'var(--color-text-muted)', display: 'block', marginBottom: '0.5rem' }}>{companyData.address}</span>
+                    <a href={companyData.mapUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600' }}>
+                      📍 Traçar Rota via GPS
+                    </a>
                   </div>
                 </div>
 
@@ -80,6 +83,20 @@ const Contact = () => {
               </form>
             </div>
 
+          </div>
+
+          {/* Embedded Map Section */}
+          <div style={{ marginTop: '4rem', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)', height: '400px' }}>
+            <iframe 
+              src={companyData.embedMapUrl} 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Carioca do Gás"
+            ></iframe>
           </div>
         </div>
       </section>
