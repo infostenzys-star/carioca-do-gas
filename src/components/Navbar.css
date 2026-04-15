@@ -26,11 +26,15 @@
   letter-spacing: -0.5px;
 }
 
-.logo-text {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-image {
+  max-height: 55px;
+  width: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
 }
 
 .navbar-links {

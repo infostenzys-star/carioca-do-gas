@@ -4,6 +4,7 @@ import { Menu, X, Wrench } from 'lucide-react';
 import { companyData } from '../data/companyData';
 import Button from './Button';
 import './Navbar.css';
+import logoImg from '../assets/Logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,7 @@ const Navbar = () => {
     <nav className="navbar surface-glass">
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <Wrench className="logo-icon" size={28} />
-          <span className="logo-text">{companyData.name}</span>
+          <img src={logoImg} alt={companyData.name} className="logo-image" />
         </Link>
 
         {/* Desktop Menu */}
