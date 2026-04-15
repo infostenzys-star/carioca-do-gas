@@ -5,8 +5,8 @@ export const companyData = {
   whatsapp: "5592993160637",
   email: "willian_gnv@hotmail.com",
   address: "R. B, 430 - Tarumã, Manaus - AM CEP.: 69041-000",
-  mapUrl: "https://maps.google.com/?q=Manaus,AM",
-  embedMapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.42261546738!2d-60.10309995576214!3d-3.113063599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9fab7e05!2sManaus%2C%20AM!5e0!3m2!1spt-BR!2sbr!4v1713028212177!5m2!1spt-BR!2sbr",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=R.+B,+430+-+Tarum%C3%A3,+Manaus+-+AM,+69041-000",
+  embedMapUrl: "https://maps.google.com/maps?q=R.+B,+430+-+Tarum%C3%A3,+Manaus+-+AM,+69041-000&t=&z=17&ie=UTF8&iwloc=&output=embed",
   workingHours: "Seg - Sex: 08:00 às 17:00 | Sáb: 08:00 às 12:00",
   social: {
     instagram: "https://www.instagram.com/carioca_do_gas?igsh=MTl2a3l4OXp3aXVseQ==",

@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import Button from '../components/Button';
 import { companyData } from '../data/companyData';
+import fachadaImg from '../assets/fachada.jpeg';
 
 const Contact = () => {
   return (
@@ -86,17 +87,22 @@ const Contact = () => {
           </div>
 
           {/* Embedded Map Section */}
-          <div style={{ marginTop: '4rem', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)', height: '400px' }}>
-            <iframe 
-              src={companyData.embedMapUrl} 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Carioca do Gás"
-            ></iframe>
+          <div style={{ marginTop: '4rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div style={{ borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)', height: '400px' }}>
+              <iframe 
+                src={companyData.embedMapUrl} 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Carioca do Gás"
+              ></iframe>
+            </div>
+            <div style={{ borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)', height: '400px' }}>
+              <img src={fachadaImg} alt="Fachada da Oficina Carioca do Gás" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
           </div>
         </div>
       </section>

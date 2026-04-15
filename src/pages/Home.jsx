@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import ServiceCard from '../components/ServiceCard';
 import { companyData } from '../data/companyData';
+import logoImg from '../assets/Logo.jpeg';
+import fachadaImg from '../assets/fachada.jpeg';
 import './Home.css';
 
 const Home = () => {
@@ -14,6 +16,7 @@ const Home = () => {
         <div className="hero-overlay"></div>
         <div className="container hero-container">
           <div className="hero-content">
+            <img src={logoImg} alt="Logo Carioca do Gás" className="hero-logo" />
             <h1 className="hero-title">
               Potência e Economia <br/>
               <span className="text-gradient">Levados a Sério</span>
@@ -73,7 +76,7 @@ const Home = () => {
             <h2 className="section-title">Onde nos <span className="text-gradient">Encontrar</span></h2>
             <p className="section-desc">Venha nos visitar em nossa oficina equipada em Manaus.</p>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'center' }}>
             <div style={{ width: '100%', height: '350px', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
               <iframe 
                 src={companyData.embedMapUrl} 
@@ -86,9 +89,12 @@ const Home = () => {
                 title="Localização Carioca do Gás"
               ></iframe>
             </div>
-            <a href={companyData.mapUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-md" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              📍 Abrir no GPS (Traçar Rota)
-            </a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
+              <img src={fachadaImg} alt="Fachada da Carioca do Gás" style={{ width: '100%', height: '280px', objectFit: 'cover', borderRadius: '24px', border: '1px solid var(--color-border)', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} />
+              <a href={companyData.mapUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-md" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                📍 Abrir no GPS (Traçar Rota)
+              </a>
+            </div>
           </div>
         </div>
       </section>
