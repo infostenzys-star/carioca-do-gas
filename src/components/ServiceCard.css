@@ -64,3 +64,24 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
+.service-card-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service-link-hint {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-link-hint {
+  opacity: 1;
+  transform: translateX(0);
+}

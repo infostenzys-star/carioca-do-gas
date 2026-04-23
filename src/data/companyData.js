@@ -1,3 +1,17 @@
+import dusterMotor from '../assets/gallery/duster-motor.jpg';
+import fiatOficina from '../assets/gallery/fiat-oficina.jpg';
+import injetores1 from '../assets/gallery/injetores-detalhe.jpg';
+import dusterMotor2 from '../assets/gallery/duster-motor-2.jpg';
+import injetores2 from '../assets/gallery/injetores-detalhe-2.jpg';
+import cilindroSedan from '../assets/gallery/cilindro-sedan.jpg';
+import cilindroHatch from '../assets/gallery/cilindro-hatch.jpg';
+import cilindroSuv from '../assets/gallery/cilindro-suv.jpg';
+import redutor from '../assets/gallery/redutor-detalhe.jpg';
+import modulo from '../assets/gallery/modulo-detalhe.jpg';
+import prismaMotor from '../assets/gallery/prisma-motor.jpg';
+import corsaMotor from '../assets/gallery/corsa-motor.jpg';
+import valvula from '../assets/gallery/valvula-abastecimento.jpg';
+
 export const companyData = {
   name: "Carioca do Gás",
   tagline: "Especialistas em performance e economia para o seu veículo.",
@@ -17,7 +31,8 @@ export const companyData = {
       id: "conversao-gnv",
       title: "Conversão para GNV",
       description: "Instalação de kits GNV de 5ª e 6ª geração com tecnologia de ponta, garantindo máxima economia e performance sem perder a potência.",
-      icon: "Wrench"
+      icon: "Wrench",
+      link: "/galeria"
     },
     {
       id: "manutencao",
@@ -36,6 +51,74 @@ export const companyData = {
       title: "Injeção Eletrônica",
       description: "Regulagem e diagnóstico avançado do sistema de injeção, ajustando a mistura de combustível para eficiência máxima no GNV e na gasolina.",
       icon: "Cpu"
+    }
+  ],
+  gallery: [
+    {
+      url: dusterMotor,
+      model: "Renault Duster",
+      kit: "Kit 5ª Geração",
+      description: "Instalação limpa e organizada no compartimento do motor, garantindo fácil acesso para manutenção."
+    },
+    {
+      url: fiatOficina,
+      model: "Fiat Toro (Frota)",
+      kit: "Kit BRC Italiano",
+      description: "Conversão de frota com tecnologia BRC, referência mundial em performance e confiabilidade."
+    },
+    {
+      url: cilindroSedan,
+      model: "Chevrolet Classic",
+      kit: "Cilindro 16m³",
+      description: "Instalação otimizada no porta-malas, mantendo o máximo de espaço útil possível."
+    },
+    {
+      url: injetores1,
+      model: "Detalhe Técnico",
+      kit: "Bicos Injetores",
+      description: "Flauta de bicos injetores de alta velocidade para uma resposta precisa na aceleração."
+    },
+    {
+      url: prismaMotor,
+      model: "Chevrolet Prisma",
+      kit: "Kit 5ª Geração",
+      description: "Configuração específica para motores GM, otimizando o consumo em trajetos urbanos."
+    },
+    {
+      url: cilindroHatch,
+      model: "Chevrolet Onix",
+      kit: "Cilindro 10m³",
+      description: "Solução compacta para veículos hatch, ideal para quem busca economia sem perder a praticidade."
+    },
+    {
+      url: redutor,
+      model: "Componente",
+      kit: "Redutor de Pressão",
+      description: "Redutor de alta performance com manômetro integrado para monitoramento constante."
+    },
+    {
+      url: corsaMotor,
+      model: "Chevrolet Corsa",
+      kit: "Kit 5ª Geração",
+      description: "Manutenção e regulagem eletrônica para garantir a longevidade do motor."
+    },
+    {
+      url: modulo,
+      model: "Eletrônica",
+      kit: "ECU de Controle",
+      description: "Módulo de controle inteligente que gerencia a transição suave entre gás e gasolina."
+    },
+    {
+      url: cilindroSuv,
+      model: "SUV Premium",
+      kit: "Cilindro de Grande Capacidade",
+      description: "Instalação robusta para veículos de grande porte, garantindo autonomia em viagens longas."
+    },
+    {
+      url: valvula,
+      model: "Segurança",
+      kit: "Válvula de Abastecimento",
+      description: "Ponto de abastecimento com válvula de segurança padrão Inmetro."
     }
   ],
   testimonials: [

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wrench, ShieldAlert, Droplet, Cpu, Settings, Car } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './ServiceCard.css';
 
 const iconMap = {
@@ -12,13 +13,28 @@ const iconMap = {
 };
 
 const ServiceCard = ({ service }) => {
-  return (
-    <div className="service-card surface-glass">
+  const CardContent = (
+    <>
       <div className="service-icon-wrapper">
         {iconMap[service.icon] || <Settings size={32} />}
       </div>
       <h3 className="service-title">{service.title}</h3>
       <p className="service-description">{service.description}</p>
+      {service.link && <span className="service-link-hint">Ver Galeria →</span>}
+    </>
+  );
+
+  if (service.link) {
+    return (
+      <Link to={service.link} className="service-card service-card-link surface-glass">
+        {CardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <div className="service-card surface-glass">
+      {CardContent}
     </div>
   );
 };

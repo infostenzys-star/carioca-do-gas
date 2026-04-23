@@ -69,6 +69,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Gallery Preview Section */}
+      <section className="section-padding gallery-preview" style={{ background: 'rgba(0, 166, 80, 0.03)' }}>
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Resultados de <span className="text-gradient">Excelência</span></h2>
+            <p className="section-desc">Confira algumas de nossas instalações recentes e a qualidade do nosso acabamento.</p>
+          </div>
+          
+          <div className="gallery-preview-grid">
+            {companyData.gallery.slice(0, 4).map((item, index) => (
+              <Link to="/galeria" key={index} className="gallery-preview-item">
+                <img src={item.url} alt={item.model} />
+                <div className="gallery-preview-overlay">
+                  <span>{item.model}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          
+          <div className="services-cta">
+            <Link to="/galeria">
+              <Button variant="secondary">Ver Galeria Completa</Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Location Section */}
       <section className="section-padding location-section" style={{ borderTop: '1px solid var(--color-border)' }}>
         <div className="container">
