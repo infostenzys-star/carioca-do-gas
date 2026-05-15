@@ -7,6 +7,7 @@ import { companyData } from '../data/companyData';
 import logoImg from '../assets/Logo.jpeg';
 import fachadaImg from '../assets/fachada.jpeg';
 import ofertaImg from '../assets/oferta-gnv.jpg';
+import bannerGasolinaImg from '../assets/banner-gasolina.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -48,7 +49,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Promo Section */}
+      {/* Awareness Section (Pain Point) */}
+      <section className="awareness-section">
+        <div className="container">
+          <div className="awareness-content">
+            <img src={bannerGasolinaImg} alt="Cansado de pagar caro na gasolina? GNV te ajuda a economizar" className="awareness-image" />
+          </div>
+        </div>
+      </section>
+
+      {/* Promo Section (Solution) */}
       <section className="section-padding promo-section">
         <div className="container promo-container">
           <div className="promo-image-wrapper">
