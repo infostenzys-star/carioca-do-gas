@@ -6,6 +6,7 @@ import ServiceCard from '../components/ServiceCard';
 import { companyData } from '../data/companyData';
 import logoImg from '../assets/Logo.jpeg';
 import fachadaImg from '../assets/fachada.jpeg';
+import ofertaImg from '../assets/oferta-gnv.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
           <div className="hero-content">
             <img src={logoImg} alt="Logo Carioca do Gás" className="hero-logo" />
             <h1 className="hero-title">
-              Potência e Economia <br/>
+              Potência e Economia <br />
               <span className="text-gradient">Levados a Sério</span>
             </h1>
             <p className="hero-subtitle">
@@ -32,7 +33,7 @@ const Home = () => {
                 Ver Serviços <ArrowRight size={20} />
               </Link>
             </div>
-            
+
             <div className="hero-trust">
               <div className="trust-item">
                 <CheckCircle size={20} className="trust-icon" />
@@ -47,6 +48,40 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Promo Section */}
+      <section className="section-padding promo-section">
+        <div className="container promo-container">
+          <div className="promo-image-wrapper">
+            <img src={ofertaImg} alt="Oferta Especial Kit GNV 5ª Geração" className="promo-image" />
+          </div>
+          <div className="promo-content">
+            <div className="promo-badge">Promoção Especial</div>
+            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem' }}>
+              Kit GNV 5ª Geração <br /> <span className="text-gradient">Completo</span>
+            </h2>
+            <p className="promo-desc">
+              Economize combustível e aumente a eficiência do seu veículo com nossa instalação premium. Garantia total e qualidade que só a Carioca do Gás oferece.
+            </p>
+            <ul className="promo-features">
+              <li><CheckCircle size={20} className="trust-icon" /> Kit 5ª Geração + Cilindro de 60L</li>
+              <li><CheckCircle size={20} className="trust-icon" /> Autorização do Detran Inclusa</li>
+              <li><CheckCircle size={20} className="trust-icon" /> Capa de Cilindro</li>
+              <li><CheckCircle size={20} className="trust-icon" /> Garantia de 1 ano do equipamento</li>
+            </ul>
+            <div className="promo-price-box">
+              <span className="promo-price-label">Por apenas</span>
+              <div className="promo-price-value">R$ 5.500,00</div>
+              <span className="promo-price-sub">Já instalado. Parcelamos nos cartões de crédito até 12X c/ taxa da maquineta.</span>
+            </div>
+            <div className="promo-actions">
+              <Button href={`https://wa.me/${companyData.whatsapp}?text=Olá!%20Gostaria%20de%20aproveitar%20a%20oferta%20do%20Kit%20GNV%205ª%20Geração%20por%20R$%205.500,00.`} variant="primary" size="lg">
+                Garantir Oferta Agora
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Preview Section */}
       <section className="section-padding services-preview">
         <div className="container">
@@ -54,13 +89,13 @@ const Home = () => {
             <h2 className="section-title">Nossas <span className="text-gradient">Soluções</span></h2>
             <p className="section-desc">Oferecemos o cuidado mecânico completo que seu veículo precisa para rodar com eficiência.</p>
           </div>
-          
+
           <div className="services-grid">
             {companyData.services.slice(0, 3).map(service => (
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
-          
+
           <div className="services-cta">
             <Link to="/servicos">
               <Button variant="secondary">Ver Todos os Serviços</Button>
@@ -76,7 +111,7 @@ const Home = () => {
             <h2 className="section-title">Resultados de <span className="text-gradient">Excelência</span></h2>
             <p className="section-desc">Confira algumas de nossas instalações recentes e a qualidade do nosso acabamento.</p>
           </div>
-          
+
           <div className="gallery-preview-grid">
             {companyData.gallery.slice(0, 4).map((item, index) => (
               <Link to="/galeria" key={index} className="gallery-preview-item">
@@ -87,7 +122,7 @@ const Home = () => {
               </Link>
             ))}
           </div>
-          
+
           <div className="services-cta">
             <Link to="/galeria">
               <Button variant="secondary">Ver Galeria Completa</Button>
@@ -105,13 +140,13 @@ const Home = () => {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'center' }}>
             <div style={{ width: '100%', height: '350px', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-              <iframe 
-                src={companyData.embedMapUrl} 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
+              <iframe
+                src={companyData.embedMapUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Localização Carioca do Gás"
               ></iframe>
